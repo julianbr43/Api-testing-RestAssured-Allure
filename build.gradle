@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.11.2' // Plugin de Allure
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit dependencies
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    
+    // Rest Assured dependencies
+    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+    testImplementation 'io.rest-assured:json-schema-validator:5.4.0'
+    
+    // Jackson for JSON processing
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    
+    // Allure Reporting
+    testImplementation 'io.qameta.allure:allure-rest-assured:2.24.0'
+    testImplementation 'io.qameta.allure:allure-junit5:2.24.0'
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty "allure.results.directory", "build/allure-results"
+}
+

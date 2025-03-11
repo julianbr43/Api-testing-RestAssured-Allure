@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Mar 11 05:01:07 COT 2025","Tue Mar 11 05:01:08 COT 2025","1198","","CovidTrackingApiTest","","CovidTrackingApiTest","testDataFields","Test specific data fields in the response","Test to verify all required data fields are present in the response"
+"passed","Tue Mar 11 05:01:08 COT 2025","Tue Mar 11 05:01:09 COT 2025","619","","CovidTrackingApiTest","","CovidTrackingApiTest","testResponseTimeAndHeaders","Test response time and headers","Test response time and headers for the states endpoint"
+"passed","Tue Mar 11 05:00:58 COT 2025","Tue Mar 11 05:01:07 COT 2025","9049","","CovidTrackingApiTest","","CovidTrackingApiTest","testStatesEndpoint","Test COVID Tracking API states endpoint returns 200 and valid data","Test to verify that the states endpoint returns a valid response"
