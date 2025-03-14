@@ -24,5 +24,4 @@ jobs:
       - name: Generate Allure Report
         run: .\gradlew.bat allureReport
 
-      - name: Run Allure Serve
-        run: .\gradlew.bat allureServe
+    
