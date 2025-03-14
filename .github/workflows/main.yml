@@ -22,10 +22,10 @@ jobs:
         run: chmod +x gradlew
         
       - name: Run API Tests
-        run: gradlew clean test
+        run: .\gradlew clean test
 
       - name: Generate Allure Report
-        run: gradlew allureReport
+        run: .\gradlew allureReport
 
       - name: Run Allure Serve
-        run: .\gradlew.bat allureServe
+        run: .\gradlew allureServe
